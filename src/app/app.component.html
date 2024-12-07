@@ -1,0 +1,29 @@
+<p-toggleButton 
+
+    onLabel="Locked" 
+    offLabel="Unlocked" 
+    onIcon=" pi-check" 
+    offIcon="pi pi-times" 
+    onIcon=" pi-lock" 
+    offIcon="pi pi-lock-open" 
+    styleClass="w-9rem"
+    ariaLabel="Do you confirm" />
+
+    <p-table [value]="cars">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Vin</th>
+          <th>Year</th>
+          <th>Brand</th>
+          <th>Color</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-car>
+        <tr>
+          <td>{{ car.vin }}</td>
+          <td>{{ car.year }}</td>
+          <td>{{ car.brand }}</td>
+          <td>{{ car.color }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
